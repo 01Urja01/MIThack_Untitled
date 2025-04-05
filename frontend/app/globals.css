@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 20% 97%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    
+    /* AI Theme Color */
+    --primary: 16 100% 50%;
+    --primary-foreground: 0 0% 98%;
+    
+    /* Blockchain Theme Color */
+    --secondary: 199 93% 48%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 24 94% 56%;
+    --radius: 0.5rem;
+
+    /* AI & Blockchain Specific Colors */
+    --ai-gradient-start: 16 100% 50%;
+    --ai-gradient-end: 24 94% 56%;
+    --blockchain-gradient-start: 199 93% 48%;
+    --blockchain-gradient-end: 201 96% 32%;
+    
+    /* Chart colors */
+    --chart-1: 24 94% 56%;
+    --chart-2: 199 93% 48%;
+    --chart-3: 262 83% 58%;
+    --chart-4: 326 100% 74%;
+    --chart-5: 174 62% 47%;
+
+    /* Light Mode Hover States */
+    --hover-primary: 16 100% 95%;
+    --hover-secondary: 199 93% 95%;
+    --hover-accent: 240 4.8% 93%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 16 100% 50%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 199 93% 48%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 24 94% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  /* AI & Blockchain Card Styles */
+  .ai-card {
+    @apply bg-gradient-to-br from-[#fa6724] to-[#ff8142] text-white;
+  }
+  
+  .blockchain-card {
+    @apply bg-gradient-to-br from-[#07a6ec] to-[#0588c5] text-white;
+  }
+  
+  /* Animated Gradients */
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Hover and Interactive States */
+  .hover-highlight {
+    @apply transition-colors duration-200;
+  }
+
+  .hover-highlight:hover {
+    @apply bg-accent/50;
+  }
+
+  /* Calendar Input Styles */
+  .date-input-wrapper {
+    @apply relative flex items-center;
+  }
+
+  .date-input {
+    @apply pl-10 pr-4 py-2 rounded-md border border-input bg-background;
+  }
+
+  .calendar-icon {
+    @apply absolute left-3 text-muted-foreground pointer-events-none;
+  }
+
+  /* Card and Interactive Element Styles */
+  .interactive-card {
+    @apply transition-all duration-200 hover:shadow-md hover:border-primary/20;
+  }
+
+  .nav-item {
+    @apply transition-colors duration-200;
+  }
+
+  .nav-item:hover {
+    @apply bg-accent/50;
+  }
+
+  /* File Claim Form Styles */
+  .file-claim-form {
+    @apply space-y-4 p-6 bg-card rounded-lg border;
+  }
+}
+

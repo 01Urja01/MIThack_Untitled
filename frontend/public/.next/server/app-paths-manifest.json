@@ -1,0 +1,10 @@
+{
+  "/auth/login/page": "app/auth/login/page.js",
+  "/dashboard/user/page": "app/dashboard/user/page.js",
+  "/dashboard/user/claims/new/page": "app/dashboard/user/claims/new/page.js",
+  "/dashboard/user/claims/success/page": "app/dashboard/user/claims/success/page.js",
+  "/dashboard/user/claims/history/page": "app/dashboard/user/claims/history/page.js",
+  "/dashboard/user/profile/page": "app/dashboard/user/profile/page.js",
+  "/dashboard/user/policies/page": "app/dashboard/user/policies/page.js",
+  "/dashboard/user/settings/page": "app/dashboard/user/settings/page.js"
+}

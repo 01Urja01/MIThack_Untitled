@@ -1,0 +1,59 @@
+# Node.js dependencies
+node_modules/
+*/node_modules/
+
+# Environment variables
+# .env
+# .env.*
+# !.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+out/
+
+# Hardhat artifacts and cache
+# artifacts/
+cache/
+typechain/
+typechain-types/
+
+# Coverage
+coverage/
+coverage.json
+.nyc_output
+
+# IDE and editor folders
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Misc
+.npm
+.eslintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+
+# Debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local config
+.prettierrc
+.eslintrc
+
+# Temporary files
+*.tmp
+tmp/
+temp/ 
