@@ -1,4 +1,4 @@
-# Swift Claim: Revolutionizing Insurance Claims with AI & Blockchain 🚀
+# Swift Claim: Revolutionizing Insurance Claims with Blockchain 🚀
 
 ![Swift Claim Logo](logo-white-bg.png)
 
@@ -17,7 +17,7 @@
 
 ## 🔍 Project Overview
 
-Swift Claim is a revolutionary **AI and blockchain-powered platform** designed to transform how insurance claims are processed. Instead of being an insurance provider, we offer a cutting-edge technology platform that enables insurance companies to process claims 100x faster, with fraud-proof verification and at significantly lower operational costs.
+Swift Claim is a revolutionary **Blockchain-powered platform** designed to transform how insurance claims are processed. Instead of being an insurance provider, we offer a cutting-edge technology platform that enables insurance companies to process claims 100x faster, with fraud-proof verification and at significantly lower operational costs.
 
 > [!tip] Our Vision
 > To create a world where insurance claims are processed instantly, transparently, and without friction, benefiting both insurers and policyholders.
