@@ -64,3 +64,7 @@ The response will be in the format:
 - The second agent (port 5005) provides an interface to interact with the chatbot and exposes an API endpoint at `/api/ask-gemini`.
 - When a request is sent to the second agent, it forwards the prompt to the first agent, which uses Gemini to generate a response.
 - The response is then returned to the client through the second agent. 
+
+
+![tag : innovationlab]
+(https://img.shields.io/badge/innovationlab-3D8BD3)
